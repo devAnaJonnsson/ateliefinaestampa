@@ -1,0 +1,158 @@
+/* === FONTES === */
+
+/* Fonte decorativa local */
+@font-face {
+  font-family: 'ChopinScript';
+  src: url('ChopinScript.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Fonte do Google para títulos principais */
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@800&display=swap');
+
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}
+
+body {
+  margin: 0;
+  font-family: 'Abhaya Libre', serif;
+  color: #5C3A2C;
+  background-color: #fff;
+}
+
+/* Cada seção ocupa a tela inteira */
+.secao {
+  min-height: 100vh;
+  padding: 120px 20px 60px 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Corrige o texto atrás do menu */
+#inicio {
+  padding-top: 120px;
+}
+
+
+/* === CORES DE FUNDO DAS SEÇÕES === */
+#inicio { background-color: #F5DCD2; }
+#sobre { background-color: #F6D4C7; }
+#visualizar { background-color: #F5DCD2; }
+#avaliacoes { background-color: #F6D4C7; }
+#contato { background-color: #F5DCD2; }
+
+
+/* === NAVBAR === */
+header {
+  background-color: #F6D4C7;
+  padding: 15px 30px;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 10px 15px -5px #C59583;
+}
+
+/* Marca da navbar (usa a fonte decorativa) */
+.navbar-brand {
+  font-family: 'ChopinScript', sans-serif;
+  font-weight: 100px;
+  font-size: 1.8rem;
+  color: #5C3A2C !important;
+  letter-spacing: 3px;
+}
+
+nav a {
+  color: #5C3A2C;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color:  #5C3A2C;
+}
+
+
+/* === FONTES PERSONALIZADAS === */
+
+/* Fonte decorativa (para títulos menores e elementos especiais) */
+.fonte-titulo {
+  font-family: 'ChopinScript', sans-serif;
+  color: #5C3A2C;
+}
+
+/* Fonte principal (Abhaya Libre ExtraBold) */
+.fonte-principal {
+  font-family: 'Abhaya Libre', serif;
+  font-weight: 800;
+  color: #5C3A2C;
+  line-height: 1.2;
+}
+
+/* Textos padrão */
+p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #5C3A2C;
+}
+
+
+/* === SEÇÃO INÍCIO === */
+#inicio h1 {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+#inicio p {
+  font-size: 1.2rem;
+}
+
+#inicio img {
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+
+/* Estatísticas (números + texto) */
+#inicio .fonte-titulo {
+  font-size: 2rem;
+  color: #5C3A2C;
+}
+
+
+/* === SEÇÃO SOBRE === */
+#sobre h2 {
+  font-family: 'ChopinScript', sans-serif;
+  font-size: 2.2rem;
+  color: #5C3A2C;
+  margin-bottom: 20px;
+}
+
+#sobre p {
+  color: #5C3A2C;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+#sobre img {
+  border: 5px solid #EAC1B4;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+  max-width: 90%;
+}
+
+
+/* === RODAPÉ (opcional para depois) === */
+footer {
+  background-color: #F6D4C7;
+  text-align: center;
+  padding: 20px 0;
+  color: #5C3A2C;
+  font-size: 0.9rem;
+}
